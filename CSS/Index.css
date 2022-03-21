@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'poppins', sans-serif;
+}
+::-webkit-scrollbar
+{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #d70f64;
+}
+header
+{
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 1px solid black;*/
+    border-top: 1PX solid rgb(206, 204, 204);
+}
+header .logo
+{
+    width: 200px;
+    height: 80px;
+    /*border: 1px solid black;*/
+}
+header .logo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .headerbtn button
+{
+    padding: 5px 20px;
+    border: 2px solid #d70f64;
+    background-color: #fff;
+    color: #d70f64;
+    font-weight: 700;
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
+header .headerbtn button:nth-child(1):hover
+{
+    background-color: #d70f64;
+    color: #fff;
+}
+header .headerbtn button:nth-child(2):hover
+{
+    background-color: #fff;
+    color: #d70f64;
+}
+header .headerbtn button:nth-child(2)
+{
+    background-color: #d70f64;
+    color: #FFF;
+}
+
+
+.banner
+{
+    width: 100%;
+    height: 85vh;
+    background: url(../Images/Home/hero-home-pk.webp);
+    background-size: 55%;
+    background-position: 155%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner h2
+{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 32px;
+    color: #333;
+    font-weight: 300;
+}
+.banner .searchrestaurant
+{
+    position: absolute;
+    width: 50%;
+    top: 45%;
+    left: 10%;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 15%);
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+}
+.banner .searchrestaurant .textBox
+{
+    padding: 15px 25px;
+    width: 63%;
+    border: 1px solid rgba(153, 153, 153, 0.5);
+    outline: none;
+}
+.banner .searchrestaurant .textBox:focus
+{
+    border: 1px solid #d70f64;
+}
+.banner .searchrestaurant .textBox::placeholder
+{
+    font-size: 1.1em;
+    color: rgb(94, 94, 94);
+    font-weight: 300;
+}
+.banner .searchrestaurant .headerbtn button
+{
+    border: none;
+    color: #fff;
+    padding: 16px 44px;
+    background-color: #d70f64;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}   
+.banner .searchrestaurant .headerbtn button:hover
+{
+    background-color: #c2175e;
+}
+.banner .searchrestaurant .headerbtn span
+{
+    font-weight: 300;
+    color: #999;
+}
+.aboutTitle
+{
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    
+}
+.aboutTitle::before
+{
+    content: "Partners";
+    position: absolute;
+    top: -150px;
+    left: 30px;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.25);
+    font-weight: 700;
+    z-index: -1000;
+}
+.aboutTitle h2
+{
+font-size: 1.8em;
+font-weight: 200;
+z-index: 1000;
+}
+.about
+{
+    width: 100%;
+    height: 70vh;
+    /*border: 1px solid black;*/
+    background-image: url(../Images/Home/home-vendor-pk.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.about .aboutcontent
+{
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 15%);
+    width: 35%;
+    padding: 18px 45px;
+    background-color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    
+}
+.about .aboutcontent h2
+{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.about .aboutcontent p
+{
+    font-size: 14px;
+    margin-top: 15px;
+    color: rgb(112, 112, 112);
+    font-weight: 400;
+}
+.about .aboutcontent .aboutBtn
+{
+    padding: 15px 75px;
+    border: none;
+    background-color:  #d70f64;
+    color: #fff;
+    float: right;
+    font-weight: 650;
+    text-transform: uppercase;
+    margin-top: 45px;
+    transition-duration: 0.3s;
+}
+.about .aboutcontent .aboutBtn:hover
+{
+    background-color: #b60a52;
+    cursor: pointer;
+}
+.cityTitle
+{
+    width: 50%;
+    text-align: center;
+    margin-top: 300px;
+    position: relative;
+    
+}
+.cityTitle::before
+{
+    content: "Cities";
+    position: absolute;
+    top: -150px;
+    left: 30px;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.25);
+    font-weight: 700;
+    z-index: -1000;
+}
+.cityTitle h2
+{
+font-size: 1.8em;
+font-weight: 200;
+z-index: 1000;
+}
+.City
+{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.City .cityContent
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.City .cityContent .cityCard
+{
+    padding: 8px;
+    width: 210px;
+    height: 270px;
+    /*border: 1px solid black;*/
+    background: url(../Images/Home/Karachi.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+}
+.City .cityContent .cityCard:hover
+{
+    transform: scale(1.1);
+}
+.City .cityContent .cityCard:nth-child(2)
+{
+    background: url(../Images/Home/Lahore.webp);
+    background-position: center;
+    background-size: cover;
+}
+.City .cityContent .cityCard:nth-child(3)
+{
+    background: url(../Images/Home/Islamabad.webp);
+    background-position: center;
+    background-size: cover;
+}
+.City .cityContent .cityCard:nth-child(4)
+{
+    background: url(../Images/Home/Rawalpindi.png);
+    background-position: center;
+    background-size: cover;
+}
+.City .cityContent .cityCard:nth-child(5)
+{
+    background: url(../Images/Home/Faisalabad.webp);
+    background-position: center;
+    background-size: cover;
+}
+.City .cityContent .cityCard h2
+{
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 600;
+    z-index: 1000;
+}
+.City .cityContent .cityCard .alphabet
+{
+    position: absolute;
+    top: 0;
+    left: -15px;
+    font-size: 15em;
+    color: #d70f64;
+    font-weight: 600;
+    opacity: 0;
+    z-index: 999;
+    transition-duration: 0.4s;
+}
+.City .cityContent .cityCard:hover .alphabet
+{
+    opacity: 0.5;
+}
+.AppTitle
+{
+    width: 50%;
+    margin-top: 200px;
+    position: relative;
+    
+}
+.AppTitle::before
+{
+    content: "Apps";
+    position: absolute;
+    top: -150px;
+    left: 30px;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.25);
+    font-weight: 700;
+    z-index: -1000;
+}
+.AppTitle h2
+{
+    font-size: 1.8em;
+    font-weight: 200;
+    margin-left: 200px;
+    z-index: 1000;
+}
+.app
+{
+    width: 100%;
+    height: 30vh;
+    background-color: #d70f64;
+    position: relative;
+}
+.app .Appcontent
+{
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 10%;
+    padding: 10px;
+    /*border: 1px solid #fff;*/
+}
+.app .Appcontent h2
+{
+    color: #fff;
+    font-weight: 200;
+}
+.app .Appcontent p
+{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+.app .appbtn
+{
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+.app .appbtn .appstore
+{
+    width: 110px;
+    height: 50px;
+    padding: 5px 8px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.app .appbtn .appstore .imgbx
+{
+    width: 30px;
+    height: 40px;
+}
+.app .appbtn .appstore .imgbx img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.app .appbtn .appstore h2
+{
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+}
+.app .appbtn .appstore h2 span
+{
+    font-size: 6px;
+}
+.app .cellphone
+{
+    
+    width: 750px;
+    height: 140%;
+    /*border: 1px solid #000;*/
+    position: absolute;
+    top: -29%;
+    right: 0px;
+}
+.app .cellphone img
+{
+    width: 100%;
+    height: 120%;
+    
+}
+.businessTitle
+{
+    width: 50%;
+    text-align: center;
+    margin-top: 200px;
+    position: relative;
+}
+.businessTitle::before
+{
+    content: "Office";
+    position: absolute;
+    top: -150px;
+    left: 30px;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.25);
+    font-weight: 700;
+    z-index: -1000;
+}
+.businessTitle h2
+{
+    font-size: 1.8em;
+    font-weight: 200;
+    z-index: 1000;
+    margin-left: -140px;
+}
+.Business
+{
+    width: 100%;
+    height: 70vh;
+    background: url(../Images/Home/home-corporate-pk.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.Business .businessContent
+{
+    position: absolute;
+    width: 43%;
+    top: 60%;
+    left: 6%;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 15%);
+}
+.Business .businessContent h2
+{
+    font-weight: 360;
+    font-size: 1.4em;   
+}
+.Business .businessContent p
+{
+    margin-top: 15px;
+    font-weight: 360;
+    font-size: 15px;
+}
+.Business .businessContent .businessBtn
+{
+    margin-top: 57px;
+    padding: 14px 75px;
+    background-color: #d70f64;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 1.3px;
+    float: right;
+    transition-duration: 0.4s;
+}
+.Business .businessContent .businessBtn:hover
+{
+    background-color: #b60a52;
+    cursor: pointer;
+}
+footer
+{
+    width: 100%;
+    margin-top: 200px;
+    padding: 20px 50px;
+    position: relative;
+}
+footer .aboutfoodpanda h2
+{
+    position: absolute;
+    left: 3%;
+    font-size: 1.9em;
+    font-weight: 600;
+    position: relative;
+}
+footer .aboutfoodpanda p
+{
+    position: absolute;
+    left: 5.5%;
+    font-size: 1em;
+    font-weight: 380;
+}
+footer .whatsnew
+{
+    margin-top: 150px;
+}
+footer .whatsnew h2
+{
+    position: relative;
+    left: 3.3%;
+    font-size: 35px;
+    font-weight: 600;
+}
+footer .whatsnew p
+{
+    margin-left: 46px;
+    margin-top: 10px;
+    font-weight: 395;
+    line-height: -70px;
+}
+footer .whatsnew p span
+{
+    color: #d70f64;
+}
+footer .faq
+{
+    margin-top: 47px;
+}
+footer .faq h2
+{
+    margin-left: 48px;
+    font-weight: 520;
+}
+footer .faq .h3
+{
+    margin-top: 12px;
+    font-weight: 450;
+    font-size: 20px;
+}
+footer .faq p
+{
+    margin-left: 47px;
+    margin-top: 25px;
+    font-weight: 380;
+    font-size: 15.5px;
+}
+footer .faq .h4
+{
+    margin-top: 25px;
+    font-weight: 450;
+    font-size: 20px;
+}
+footer .faq .h7
+{
+    margin-left: 85px;
+    font-weight: 320;
+}
+footer .faq .h7 span
+{
+    font-weight: 600;
+    font-size: 20px;
+}
+footer .faq .h8
+{
+    margin-top: 30px;
+}
+footer .faq .h9
+{
+    font-weight: 399;
+    font-size: 15px;
+}
+footer .faq .hy
+{
+    margin-top: 25px;
+}
+footer .faq .hover
+{
+    margin-top: 40px;
+    margin-left: 45px;
+    width: 97%;
+    height: 65px;
+    border:  1px solid #fff;
+    transition-duration: 0.6s;
+}
+footer .faq .hover .hp
+{
+    margin-top: 19px;
+    font-weight: 390;
+    font-size: 15px;
+    color: #000;
+    word-spacing: -1px;
+    padding-bottom: 20px;
+}
+footer .faq .hover:hover
+{
+    background-color: rgba(153, 152, 152, 0.356);
+}
+.footer12
+{
+    align-items: center;
+    width: 97%;
+    height: 90px;
+    position: relative;
+    filter: grayscale(100);
+}
+.footer12 .img12
+{
+    margin-top: 50px;
+    margin-left: 5px;
+    width: 20%;
+    height: 60px;
+}
+.footer12 .img12 img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer12 .img23
+{
+    width: 3.5%;
+    height: 40px;
+    position: absolute;
+    right: 5%;
+    top: 9%;
+}
+.footer12 .img23 img
+{
+    width: 100%;
+    height: 100%;
+}
+.footer12 .img34
+{
+    width: 3.5%;
+    height: 40px;
+    position: absolute;
+    right: 1%;
+    top: 9%;
+}
+.footer12 .img34 img
+{
+    width: 100%;
+    height: 100%;   
+}
+.copyright
+{
+    margin-top: 20px;
+    text-align: center;
+
+}
+.copyright h2
+{
+    color: #999;
+    font-size: 18px;
+    font-weight: 400;
+    word-spacing: -4px;
+}
+.copyright h2 span
+{
+    color: #d70f64;
+}
+.myspan a
+{
+    color: #d70f64;
+}
+
+
+
+
+
+
